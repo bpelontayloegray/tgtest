@@ -1,0 +1,265 @@
+<!-- 
+
+	Hey Lukas, 
+
+	Just want to test a few basic concepts and not waste your time in the process.  This should take less than 20 minutes.
+
+	1) If you're this far you clearly understand git, so you're off to a good start.
+
+	2) Add a content block and style it like the picture examples, (it's near the footer - notated in the graphic) this will demonstarate understanding of bootsrap html markup and basic css.  
+
+	3) Add a vertially centered bootstrap modal that pops up saying "give me the job already." 2 seconds after the dom loads. [https://getbootstrap.com/docs/4.0/components/modal/] 
+		This will demonstarate basic jquery/javascript understanding and how to read documentation.
+
+
+	I've already linked up the test css files. You can just add the js inline on this page.
+
+
+	Once complete, just push back up to the repo.
+
+
+--> 
+
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="profile" href="http://gmpg.org/xfn/11">
+      <link rel="pingback" href="https://www.wilmingtongrill.com/xmlrpc.php">
+      <title>Landing Page - Authorized Dealer - Wilmington Grill</title>
+      <!-- This site is optimized with the Yoast SEO plugin v11.0 - https://yoast.com/wordpress/plugins/seo/ -->
+      <!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->
+      <link rel="canonical" href="https://www.wilmingtongrill.com/authorized-dealer-landing-page/" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Landing Page - Authorized Dealer - Wilmington Grill" />
+      <meta property="og:url" content="https://www.wilmingtongrill.com/authorized-dealer-landing-page/" />
+      <meta property="og:site_name" content="Wilmington Grill" />
+      <meta property="article:publisher" content="http://www.facebook.com/WilmingtonGrill" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Landing Page - Authorized Dealer - Wilmington Grill" />
+      <link rel='stylesheet' id='tgs_wp-theme-style-css'  href='https://www.wilmingtongrill.com/wp-content/themes/wilmington-grill/includes/css/styles.min.css?ver=1555442237' type='text/css' media='all' />
+      <link rel="icon" href="https://www.wilmingtongrill.com/wp-content/uploads/2018/09/wg-icon-146x150.png" sizes="32x32" />
+      <link rel="icon" href="https://www.wilmingtongrill.com/wp-content/uploads/2018/09/wg-icon.png" sizes="192x192" />
+      <link rel="apple-touch-icon-precomposed" href="https://www.wilmingtongrill.com/wp-content/uploads/2018/09/wg-icon.png" />
+      <meta name="msapplication-TileImage" content="https://www.wilmingtongrill.com/wp-content/uploads/2018/09/wg-icon.png" />
+
+      <link rel='stylesheet' id='test-css'  href='/css/test.css' type='text/css' media='all' />
+
+   </head>
+   <body class="page-template page-template-page-templates page-template-template-landing-page page-template-page-templatestemplate-landing-page-php page page-id-773 page-parent logged-in admin-bar no-customize-support page-authorized-dealer-landing-page">
+      <header class="site-header">
+         <div class="container">
+            <div class="row d-none d-lg-block">
+               <div class="col text-right">
+                  <ul class="header-social-list">
+                     <li><a class="social-link" href="http://www.facebook.com/WilmingtonGrill" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a class="social-link" href="https://www.instagram.com/wilmingtongrill/" target="_blabk"><i class="fab fa-instagram"></i></a></li>
+                     <li><a class="social-link" href="https://www.youtube.com/channel/UCsdWBnasefSBrpQd5k-q8lA" target="_blabk"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <nav class="navbar navbar-expand-lg justify-content-between navbar-light">
+                     <a class="site-logo navbar-brand" href="/" title="Site Name"><img src="https://www.wilmingtongrill.com/wp-content/themes/wilmington-grill/includes/images/wg-logo.png" alt="Wilmington Grill Logo" /></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <i class="fal fa-bars"></i>
+                     </button>
+                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul id="main-menu" class="navbar-nav ml-auto">
+                           <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22 nav-item dropdown">
+                              <a href="https://www.wilmingtongrill.com/products/" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
+                              <div class="dropdown-menu">
+                                 <a href="https://www.wilmingtongrill.com/products/gas-grills/" class="dropdown-item">Gas Grills</a><a href="/product/charcoal-grill/" class="dropdown-item">Charcoal Grills</a><a href="https://www.wilmingtongrill.com/products/drop-in-grills/" class="dropdown-item">Drop In Grills</a><a href="/product/custom-grill-islands/" class="dropdown-item">Custom Grill Islands</a><a href="/product/stainless-steel-shucker-table/" class="dropdown-item">Shucker Tables</a><a href="https://www.wilmingtongrill.com/products/fire-pits/" class="dropdown-item">Fire Pits &#038; Burn Barrels</a>
+                              </div>
+                           <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19 nav-item"><a href="https://www.wilmingtongrill.com/accessories/" class="nav-link">Accessories</a>
+                           <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21 nav-item"><a href="https://www.wilmingtongrill.com/dealer-locator/" class="nav-link">Dealer Locator</a>
+                           <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"><a href="https://www.wilmingtongrill.com/resources/" class="nav-link">Resources</a>
+                           <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item"><a href="https://www.wilmingtongrill.com/about/" class="nav-link">About Us</a>
+                           <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item"><a href="https://www.wilmingtongrill.com/contact/" class="nav-link">Contact Us</a>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="landing-page-hero" style="background-image: url(https://www.wilmingtongrill.com/wp-content/uploads/2019/04/authorized-dealer-landing-page-header-1140x407.jpg);">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="hero-content-block">
+                     <h1>Discover The Wilmington Grill Difference</h1>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="hero-grill-block">
+                     <img src="https://www.wilmingtongrill.com/wp-content/uploads/2019/04/grill-deluxe2-open.png" alt="Image of Wilmington Grill's Deluxe Gas Grill" class="img-fluid">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container landing-page-content">
+         <div class="row">
+            <div class="col-sm-12 text-center">
+               <h2>Become an Authorized Dealer of the Toughest Grill on the Market</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6">
+               <h3>Proven against the harshest of environmental conditions.</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ante vitae massa dignissim placerat. Nunc vitae euismod nisl. Nulla elit purus, euismod vitae tempus nec, tempor vitae eros. Vestibulum ac mi vel ante iaculis mollis id vel tellus. Nulla viverra mi turpis, non facilisis lorem sodales ut. </p>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+               <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_2' >
+                  <div id='gf_2' class='gform_anchor' tabindex='-1'></div>
+                  <form method='post' enctype='multipart/form-data'  id='gform_2'  action='/authorized-dealer-landing-page/#gf_2'>
+                     <div class='gform_body'>
+                        <ul id='gform_fields_2' class='gform_fields top_label form_sublabel_below description_below'>
+                           <li id='field_2_1'  class='gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible' >
+                              <h6>Interested in becoming an authorized dealer?</h6>
+                               
+                              <p>Use the form below to contact us at any time or please give us a call at <a href="tel:+19107931345">910.793.1345</a> between 8am and 5pm EST, Monday through Friday.</p>
+                           </li>
+                           <li id='field_2_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' >
+                              <label class='gfield_label' for='input_2_2' >Name<span class='gfield_required'>*</span></label>
+                              <div class='ginput_container ginput_container_text'><input name='input_2' id='input_2_2' type='text' value='' class='medium'   tabindex='1000' placeholder='Name*' aria-required="true" aria-invalid="false" /></div>
+                           </li>
+                           <li id='field_2_3'  class='gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible' >
+                              <label class='gfield_label' for='input_2_3' >Company</label>
+                              <div class='ginput_container ginput_container_text'><input name='input_3' id='input_2_3' type='text' value='' class='medium'   tabindex='1001' placeholder='Company'  aria-invalid="false" /></div>
+                           </li>
+                           <li id='field_2_4'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' >
+                              <label class='gfield_label' for='input_2_4' >Phone Number<span class='gfield_required'>*</span></label>
+                              <div class='ginput_container ginput_container_phone'><input name='input_4' id='input_2_4' type='text' value='' class='medium' tabindex='1002' placeholder='Phone Number*' aria-required="true" aria-invalid="false"  /></div>
+                           </li>
+                           <li id='field_2_5'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' >
+                              <label class='gfield_label' for='input_2_5' >Email<span class='gfield_required'>*</span></label>
+                              <div class='ginput_container ginput_container_email'>
+                                 <input name='input_5' id='input_2_5' type='text' value='' class='medium' tabindex='1003'  placeholder='Email*' aria-required="true" aria-invalid="false" />
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class='gform_footer top_label'> <button type="submit" id="gform_submit_button_2" class="gform_button button" tabindex="1004" onclick='if(window["gf_submitting_2"]){return false;}  window["gf_submitting_2"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} window["gf_submitting_2"]=true;  jQuery("#gform_2").trigger("submit",[true]); }'>Submit</button> 
+                        <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+                        <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+                        <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+                        <input type='hidden' class='gform_hidden' name='state_2' value='WyJbXSIsImM3ZGU0NGEzYmE3MGE5OThmYmQ3N2FkODQ4YzVjYjI0Il0=' />
+                        <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+                        <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+                        <input type='hidden' name='gform_field_values' value='' />
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="landing-page-cta-bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="cta-bg-img" style="background-image: url(https://www.wilmingtongrill.com/wp-content/uploads/2019/04/grill-welding.jpg);"></div>
+               </div>
+               <div class="col-lg-6">
+                  <h4>Lift the Lid and Feel the Difference</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ante vitae massa dignissim placerat. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="top-grills-row">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4" data-mh="grill-block">
+                  <div class="top-grills-content">
+                     <h2>Top Grills</h2>
+                     <p>From heavy duty 304 grade stainless steel to the lifetime warranty on the burners, these grills are built for a lifetime of grilling.</p>
+                     <p><a href="http://www.wilmingtongrill.com/products/">VIEW ALL PRODUCTS</a></p>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-mh="grill-block">
+                  <a href="https://www.wilmingtongrill.com/product/deluxe-gas-grill/" class="top-grill-item">
+                     <img width="600" height="600" src="https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Deluxe-600x600.jpg" class="attachment-medium size-medium wp-post-image" alt="Deluxe Grill" srcset="https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Deluxe-600x600.jpg 600w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Deluxe-150x150.jpg 150w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Deluxe-768x768.jpg 768w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Deluxe-e1541693021969.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />						
+                     <span class="product-details-overlay">
+                        <h3>Deluxe Gas Grill</h3>
+                     </span>
+                  </a>
+               </div>
+               <div class="col-lg-4" data-mh="grill-block">
+                  <a href="https://www.wilmingtongrill.com/product/classic-gas-grill/" class="top-grill-item">
+                     <img width="600" height="600" src="https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Classic3-600x600.jpg" class="attachment-medium size-medium wp-post-image" alt="Classic Grill" srcset="https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Classic3-600x600.jpg 600w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Classic3-150x150.jpg 150w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Classic3-768x768.jpg 768w, https://www.wilmingtongrill.com/wp-content/uploads/2018/10/Classic3.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" />						
+                     <span class="product-details-overlay">
+                        <h3>Classic Gas Grill</h3>
+                     </span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- 
+		
+		2) Insert the Footer calls to action block
+
+		-wrapper with padding
+		-container
+		-row
+		-columns of spans 5,5 & 2
+	
+		I'm not worried about specifc text styling in the last column but if you want to do that feel free.
+
+      -->
+
+      <footer class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <img class="footer-logo" src="https://www.wilmingtongrill.com/wp-content/themes/wilmington-grill/includes/images/wg-logo-white.png" alt="Wilmington Grill Logo" />
+               </div>
+            
+            </div>
+            <div class="row">
+               <div class="col-lg-7">
+                  <div class="menu-footer-container">
+                     <ul id="footer-menu" class="footer-menu">
+                        <li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-719 nav-item"><a href="https://www.wilmingtongrill.com/products/" class="nav-link">Products</a>
+                        <li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716 nav-item"><a href="https://www.wilmingtongrill.com/accessories/" class="nav-link">Accessories</a>
+                        <li id="menu-item-718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-718 nav-item"><a href="https://www.wilmingtongrill.com/dealer-locator/" class="nav-link">Dealer Locator</a>
+                        <li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720 nav-item"><a href="https://www.wilmingtongrill.com/resources/" class="nav-link">Resources</a>
+                        <li id="menu-item-715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715 nav-item"><a href="https://www.wilmingtongrill.com/about/" class="nav-link">About</a>
+                        <li id="menu-item-717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-717 nav-item"><a href="https://www.wilmingtongrill.com/contact/" class="nav-link">Contact</a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <p class="tg-mark">&copy;2019 Wilmington Grill All Rights Reserved <span class="pipe">|</span> <a href="http://tayloegray.com">Web Design &amp; Hosting by T/G</a></p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script>
+
+      	/*
+			
+			3) Fire off centered Bootstrap modal after 2 seconds.
+
+		*/
+
+
+		$( document ).ready(function() {
+		
+
+		    console.log( "ready!" );
+		
+
+		});      
+	</script>
+   </body>
+</html>
