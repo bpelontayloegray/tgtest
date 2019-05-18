@@ -6,8 +6,7 @@
 	padding-left: 10px;
 }
 
-
-.cta-item2 a, a:hover, a:focus{
+.cta-item:hover, .cta-item:focus{
 	color: #fff;
 	background-color: #9A0000;
 	text-decoration: none;
@@ -18,12 +17,22 @@
 	transition-delay: 0s, 0s, 0s;
 }
 
+.cta-item2:hover, .cta-item2:focus{
+	color: #fff;
+	background-color: #9A0000;
+	text-decoration: none;
+	transition: color .2s linear,background .2s linear,border .2s linear;
+	transition-property: color, background, border;
+	transition-duration: 0.2s, 0.2s, 0.2s;
+	transition-timing-function: linear, linear, linear;
+	transition-delay: 0s, 0s, 0s;
+}
 
 .cta-item {
 	display: block;
 	position: relative;
 	height: 150px;
-	background-color: #2e2e2e;
+	background-color: transparent;
 	color: white;
 	background-position: center;
 	background-size: cover;
@@ -32,22 +41,22 @@
 }
 
 .cta-item > span {
-    display: block;
-    color: #fff;
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 36px;
-    line-height: 2.25rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    transform: translate(-50%,-50%);
-    font-weight: 500;
-    width: 100%;
-    padding: 10px;
-    z-index: 40;
+	display: block;
+	color: #fff;
+	font-size: 36px;
+	font-size: 2.25rem;
+	line-height: 36px;
+	line-height: 2.25rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	transform: translate(-50%,-50%);
+	font-weight: 500;
+	width: 100%;
+	padding: 10px;
+	z-index: 40;
 }
 
 .cta-item2{
